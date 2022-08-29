@@ -534,7 +534,7 @@ procdump(void)
 }
 
 int getprocs() {
-	int cont;
+	int cont =0;
 	struct proc *p;
 	for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
 	
